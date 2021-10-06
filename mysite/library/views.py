@@ -42,3 +42,8 @@ def author(request, author_id):
 class BookListView(generic.ListView):
     model = Book
     template_name = 'book_list.html'
+
+
+class BookDetailView(generic.DetailView):
+    model = Book
+    template_name = 'book_detail.html'
