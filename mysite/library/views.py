@@ -47,7 +47,7 @@ def author(request, author_id):
 class BookListView(generic.ListView):
     model = Book
     template_name = 'book_list.html'
-    paginate_by = 1
+    paginate_by = 5
 
 
 class BookDetailView(generic.DetailView):
